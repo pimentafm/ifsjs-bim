@@ -28,7 +28,7 @@ export const MapViewer: FC = () => {
   };
   return (
     <>
-      <Button>Logout</Button>;
+      <Button onClick={onLogout}>Logout</Button>
       <div className="full-screen" ref={canvasRef}></div>
     </>
   );

@@ -12,7 +12,7 @@ export const executeCore = (action: Action) => {
   }
 
   if (action.type === "START_MAP") {
-    MapHandler.start();
+    MapHandler.start(action.payload);
   }
 
   if (action.type === "REMOVE_MAP") {

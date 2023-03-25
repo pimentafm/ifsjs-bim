@@ -1,9 +1,20 @@
+import { MapScene } from "./MapScene";
+
 export const MapHandler = {
-  start() {
-    console.log("Map started");
+  viewer: null as MapScene | null,
+
+  start(container: HTMLDivElement) {
+    if (!this.viewer) {
+      console.log("Map started");
+      this.viewer = new MapScene(container);
+    }
   },
 
   remove() {
-    console.log("Map removed");
+    if (this.viewer) {
+      console.log("Map removed");
+      this.viewer.dispose();
+      this.viewer = null;
+    }
   },
 };
