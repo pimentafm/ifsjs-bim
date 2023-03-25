@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import { FC } from "react";
 import { useAppContext } from "../../middleware/ContextProvider";
 
@@ -17,10 +18,14 @@ export const LoginForm: FC = () => {
       {state.user ? (
         <>
           <p>{state.user.displayName}</p>
-          <button onClick={onLogout}>Logout</button>
+          <Button variant="contained" onClick={onLogout}>
+            Logout
+          </Button>
         </>
       ) : (
-        <button onClick={onLogin}>Login</button>
+        <Button variant="contained" onClick={onLogin}>
+          Login
+        </Button>
       )}
     </h1>
   );

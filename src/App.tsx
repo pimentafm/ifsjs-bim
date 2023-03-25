@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { BuildingViewer } from "./components/BuildingViewer";
-import { MapViewer } from "./components/MapViewer";
+import { BuildingViewer } from "./components/building/BuildingViewer";
+import { MapViewer } from "./components/map/MapViewer";
 
 import "./App.css";
 import { ContextProvider } from "./middleware/ContextProvider";
