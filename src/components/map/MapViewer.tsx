@@ -28,8 +28,8 @@ export const MapViewer: FC = () => {
   };
   return (
     <>
-      <Button onClick={onLogout}>Logout</Button>
       <div className="full-screen" ref={canvasRef}></div>
+      <Button onClick={onLogout}>Logout</Button>
     </>
   );
 };
